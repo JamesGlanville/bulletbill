@@ -41,10 +41,20 @@ difference()
 {
 translate([0,0,-14.5])bulletbill();
 translate([-50,-50,-20])cube([100,100,20]);
-translate([-50,-50,30])cube([100,100,50]);
+translate([-50,-50,28.7])cube([100,100,50]);
 translate([0,0,-1])difference(){cylinder(r=15,h=40);}
 }
 }
+//28.7
+module top()
+{
+difference()
+{
+translate([0,0,-43.2])bulletbill();
+translate([-50,-50,-100])cube([100,100,100]);
+}
+}
 //base();
-middle();
+//middle();
 //bulletbill();
+top();
